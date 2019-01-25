@@ -1,23 +1,13 @@
 import React from "react"
-import { Text, View } from "react-native"
+import { View } from "react-native"
+import Home from './components/Home'
 
-export interface Props {
-  name: string
-  enthusiasmLevel?: number
-}
-
-interface State {
-  enthusiasmLevel: number
-}
-
-export default class Hello extends React.Component<Props, State> {
+export default class App extends React.Component{
 
   render() {
     return (
       <View>
-        <Text>
-          Hello
-        </Text>
+        <Home />
       </View>
     )
   }

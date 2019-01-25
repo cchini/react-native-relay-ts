@@ -32,7 +32,8 @@
       "build", 
       "node_modules",
       "jest.config.js",
-      "App.js"
+      "App.js",
+      "src/components/__generated__/*.ts"
   ],
   "compileOnSave": false
 }

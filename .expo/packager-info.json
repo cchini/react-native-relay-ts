@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": null,
-  "packagerPid": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null
+  "packagerPort": 19001,
+  "packagerPid": 91417,
+  "expoServerNgrokUrl": "https://ha-trx.chini.react-native-relay-ts.exp.direct",
+  "packagerNgrokUrl": "https://packager.ha-trx.chini.react-native-relay-ts.exp.direct",
+  "ngrokPid": 91431
 }
