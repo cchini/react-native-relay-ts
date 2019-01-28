@@ -1,10 +1,5 @@
-import React from "react";
-import { View } from "react-native";
-import Home from './components/Home';
-export default class App extends React.Component {
-    render() {
-        return (React.createElement(View, null,
-            React.createElement(Home, null)));
-    }
-}
+import React from 'react';
+import AppNavigator from './screens/navigation/AppNavigator';
+const App = () => React.createElement(AppNavigator, null);
+export default App;
 //# sourceMappingURL=App.js.map

@@ -1,15 +1,7 @@
-import React from "react"
-import { View } from "react-native"
-import Home from './components/Home'
+import React from 'react'
+import AppNavigator from './screens/navigation/AppNavigator'
 
-export default class App extends React.Component{
+const App = () => <AppNavigator />
 
-  render() {
-    return (
-      <View>
-        <Home />
-      </View>
-    )
-  }
-}
+export default App
 
