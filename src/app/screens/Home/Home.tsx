@@ -10,6 +10,7 @@ import {
   RecordSource,
   Store,
 } from 'relay-runtime'
+import Layout from '../Layout/Layout'
 
 function fetchQuery(
   operation: any,
@@ -57,7 +58,7 @@ const HomeAllPostQuery = graphql`
 `
 // Types
 type HomePost_viewer = {
-  readonly allPosts: ({
+  allPosts: ({
       readonly edges: ReadonlyArray<({
           readonly node: ({
               readonly id: string;
@@ -70,7 +71,7 @@ type HomePost_viewer = {
 type appQueryVariables = {};
 type appQueryResponse = {
     readonly viewer: ({
-        readonly " $fragmentRefs": HomePost_viewer;
+        readonly : HomePost_viewer;
     }) | null;
 }
 type appQuery = {
@@ -78,7 +79,7 @@ type appQuery = {
     readonly variables: appQueryVariables;
 }
 
-export default class Home extends React.Component {
+class Home extends React.Component {
 
   render() {
     return (
@@ -88,7 +89,7 @@ export default class Home extends React.Component {
           query={HomeAllPostQuery}
           variables={{}}
           render={({error, props}) => {
-            console.log(props)
+            props?console.log(props.viewer) : console.log('este es el null')
             if (error) {
               return <Text>{error.message}</Text>
             } else if (props) {
@@ -102,23 +103,4 @@ export default class Home extends React.Component {
   }
 }
 
-
-
-
-
-
-/*
-query HomeAllPostQuery {
-    viewer {
-      allPosts(last: 100, orderBy: createdAt_DESC){
-      edges {
-        node {
-          id
-          description
-          imageUrl
-        }
-      }
-    }
-    }
-  }
-*/
+export default Layout(Home)

@@ -1,4 +1,10 @@
 {
+  "linterOptions": {
+    "exclude": [
+        "build",
+        "src/components/__generated__/*.ts"
+    ]
+  },
   "rules": {
     "member-access": false,
     "member-ordering": [

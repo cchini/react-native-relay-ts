@@ -1,6 +1,6 @@
 {
   "presets": ["babel-preset-expo"],
   "plugins": [
-    ["relay", { "artifactDirectory": "./src/components/__generated__" }]
+    ["relay", {"compat": true, "artifactDirectory": "./src/components/__generated__" }]
   ]
 }
