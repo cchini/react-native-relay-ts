@@ -13,7 +13,7 @@ const SvgComponent = () => (
       <G
         id='Artboard'
         transform='translate(0.000000, -7.000000)'
-        fill='#14C1A5'
+        fill='orange'
       >
         <G id='Group-3' transform='translate(0.000000, 1.000000)'>
           <G id='Group-2'>

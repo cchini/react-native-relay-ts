@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import styles from './Layout.styles'
 import Icon from '../../components/Icon/Icon'
+import Button from '../../components/Button/Button'
 
 const Layout  = <P extends object>(Component?: React.ComponentType<P>) =>
   class ScreenReturn extends React.Component<P> {
@@ -16,7 +17,9 @@ const Layout  = <P extends object>(Component?: React.ComponentType<P>) =>
               <Component {...this.props} />
             </View>
             <View style={styles.contentFooter} >
-              <Text />
+              <Button>
+                <Text>add</Text>
+              </Button>
             </View>
             </View>
         </View>

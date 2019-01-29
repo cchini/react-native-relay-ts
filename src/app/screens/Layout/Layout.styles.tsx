@@ -17,15 +17,16 @@ const stylesLayout = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     width: '95%',
-    height: '10%',
+    height: '8%',
   },
   contentImages: {
     flexGrow: 1,
+    marginTop: '2%',
     width: '100%',
-    height: '75%',
+    height: '70%',
     backgroundColor: '#F3F3F3',
     borderColor: '#979797',
-    borderRadius: 8,
+    borderRadius: 6,
     borderWidth: 1,
     borderBottomWidth: 0,
     shadowColor: 'rgba(0,0,0,0.50)',
@@ -35,9 +36,9 @@ const stylesLayout = StyleSheet.create({
   },
   contentFooter: {
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     width: '100%',
-    height:  '10%',
+    height:  '15%',
   },
 })
 
