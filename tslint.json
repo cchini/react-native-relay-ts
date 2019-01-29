@@ -75,13 +75,20 @@
       true,
       150
     ],
-    "no-require-imports": false,
+    "no-require-imports": true,
     "no-trailing-whitespace": true,
     "object-literal-sort-keys": false,
     "trailing-comma": [
-      true, {
-        "multiline":  "never",
-        "singleline": "never"
+      true,
+      {
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "never",
+          "exports": "always",
+          "typeLiterals": "ignore"
+        },
+        "esSpecCompliant": true
       }
     ],
     "align": [true],
@@ -109,7 +116,7 @@
     ],
     "semicolon": [
       true,
-      "always",
+      "never",
       "ignore-interfaces"
     ],
     "variable-name": [

@@ -19,5 +19,5 @@ const HomeAllPostQuery = graphql`
 `
 
 export {
-  HomeAllPostQuery
+  HomeAllPostQuery,
 }

@@ -33,5 +33,5 @@ type appQuery = {
 export {
   HomePost_viewer,
   appQueryVariables,
-  appQuery
+  appQuery,
 }

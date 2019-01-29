@@ -2,27 +2,27 @@ import { StyleSheet } from 'react-native'
 
 const stylesLayout = StyleSheet.create({
   container: {
-    flex: 1,
+    flexGrow: 1,
     alignItems: 'center',
     flexDirection: 'column',
     backgroundColor: 'black',
   },
   content: {
-    flex: 1,
+    flexGrow: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    width:'95%',
+    width: '95%',
   },
   containerLogo: {
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
     width: '95%',
-    height:'10%',
+    height: '10%',
   },
   contentImages: {
-    flex: 1,
+    flexGrow: 1,
     width: '100%',
-    height:'75%',
+    height: '75%',
     backgroundColor: '#F3F3F3',
     borderColor: '#979797',
     borderRadius: 8,
@@ -35,9 +35,9 @@ const stylesLayout = StyleSheet.create({
   },
   contentFooter: {
     alignItems: 'center',
-    justifyContent:'flex-end',
+    justifyContent: 'flex-end',
     width: '100%',
-    height:'10%',
+    height:  '10%',
   },
 })
 

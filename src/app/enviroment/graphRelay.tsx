@@ -7,13 +7,13 @@ import {
 
 function fetchQuery(
   operation: any,
-  variables: any,
+  variables: any
 ) {
   return fetch('https://api.graph.cool/relay/v1/cjrc7hykq6xrj0158i0v2smcy', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
       query: operation.text,

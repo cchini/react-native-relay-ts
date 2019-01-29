@@ -9,7 +9,7 @@ type Node = {
 }
 
 type Props = {
-  viewer? : HomePost_viewer
+  viewer?: HomePost_viewer
 }
 
 export {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image,ScrollView,View, Text } from 'react-native'
+import { Image, ScrollView, View, Text } from 'react-native'
 import { Props, Node } from './Posts.types'
 import styles from './Posts.styles'
 
@@ -28,7 +28,5 @@ class ListPosts extends React.Component<Props> {
     )
   }
 }
-
-
 
 export default ListPosts

@@ -5,14 +5,14 @@ import stylesTabBarTop from './TabBarTop.styles'
 type ThemeBarTop = 'dark' | 'light'
 
 type DefaultProps = {
-  Theme : ThemeBarTop
+  Theme: ThemeBarTop
 }
 
-const BarTop = (Theme? : ThemeBarTop) => <P extends object>(Component? : React.ComponentType<P>) =>
+const BarTop = (Theme?: ThemeBarTop) => <P extends object>(Component?: React.ComponentType<P>) =>
   class ScreenReturn extends React.Component<P> {
 
     static defaultProps: DefaultProps = {
-      Theme : 'dark'
+      Theme : 'dark',
     }
 
     static navigationOptions = {
