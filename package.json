@@ -17,7 +17,7 @@
     "buildRunIOS": "yarn run build && yarn run watchAndRunIOS ",
     "watchAndStart": "concurrently \"yarn run watch\" \"yarn run start\"",
     "buildAndStart": "yarn run build && yarn run watchAndStart ",
-    "relay": "relay-compiler --src ./src --schema ./schema.graphql --language typescript --artifactDirectory ./src/components/__generated__"
+    "relay": "relay-compiler --src ./src/app --schema ./schema.graphql --language typescript --artifactDirectory ./src/components/__generated__"
   },
   "dependencies": {
     "expo": "^32.0.0",
