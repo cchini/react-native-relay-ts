@@ -4,12 +4,13 @@ import {
   RecordSource,
   Store,
 } from 'relay-runtime'
+import {RELAY_API} from 'react-native-dotenv'
 
 function fetchQuery(
   operation: any,
   variables: any
 ) {
-  return fetch('https://api.graph.cool/relay/v1/cjrc7hykq6xrj0158i0v2smcy', {
+  return fetch(RELAY_API, {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
