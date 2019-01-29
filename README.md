@@ -14,10 +14,10 @@
 
 - Configure the Relay Environment and deploy
 
-You need to replace __RELAY_API_ENDPOINT__ with your endpoint for the Relay API
+You need to replace **RELAY_API** (.env) with your endpoint for the Relay API
 
 `$ yarn relay`
 
 - Go
 
-`$ yarn buildAndStart`
+`$ yarn build-start`
