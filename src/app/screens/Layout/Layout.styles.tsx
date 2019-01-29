@@ -4,31 +4,25 @@ const stylesLayout = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    flexDirection: 'column',
     backgroundColor: 'black',
   },
   content: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'center',
     alignItems: 'center',
-    width:'90%',
-    marginTop: '5%',
-    marginBottom: '5%',
-    marginLeft:'5%',
-    marginRight:'5%'
+    width:'95%',
   },
   containerLogo: {
-    flex: 1,
     alignItems: 'flex-start',
     justifyContent: 'flex-start',
-    width: '90%',
+    width: '95%',
     height:'10%',
   },
   contentImages: {
-    alignItems: 'center',
-    width: '95%',
-    height:'80%',
+    flex: 1,
+    width: '100%',
+    height:'75%',
     backgroundColor: '#F3F3F3',
     borderColor: '#979797',
     borderRadius: 8,
@@ -41,7 +35,8 @@ const stylesLayout = StyleSheet.create({
   },
   contentFooter: {
     alignItems: 'center',
-    width: '90%',
+    justifyContent:'flex-end',
+    width: '100%',
     height:'10%',
   },
 })

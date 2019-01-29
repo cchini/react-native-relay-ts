@@ -1,6 +1,11 @@
 {
   "presets": ["babel-preset-expo"],
   "plugins": [
-    ["relay", {"compat": true, "artifactDirectory": "./src/components/__generated__" }]
+    ["relay", {
+      "compat": true,
+      "artifactDirectory": "./src/components/__generated__" ,
+      "schema":"./schema.graphql",
+      "src":"./src/app"
+      }]
   ]
 }
