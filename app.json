@@ -23,7 +23,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.yourappname"
+    },
+    "android": {
+      "package": "com.yourcompany.yourappname"
     },
     "packagerOpts": {
       "sourceExts": [
@@ -31,6 +35,8 @@
         "tsx"
       ],
       "transformer": "node_modules/react-native-typescript-transformer/index.js"
-    }
+    },
+    "description": "Project react-native / graphql-relay / typescript",
+    "githubUrl": "https://github.com/cchini/react-native-relay-ts"
   }
 }

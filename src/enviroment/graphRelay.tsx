@@ -6,10 +6,7 @@ import {
 } from 'relay-runtime'
 import {RELAY_API} from 'react-native-dotenv'
 
-function fetchQuery(
-  operation: any,
-  variables: any
-) {
+const fetchQuery = (operation: any, variables: any) => {
   return fetch(RELAY_API, {
     method: 'POST',
     headers: {
@@ -26,7 +23,6 @@ function fetchQuery(
 }
 
 const network = Network.create(fetchQuery)
-
 const source = new RecordSource()
 const store = new Store(source)
 
