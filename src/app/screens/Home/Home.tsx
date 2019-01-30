@@ -5,7 +5,7 @@ import Layout from '../Layout/Layout'
 import ListPost from '../Posts/ListPosts'
 import {appQuery} from './Home.types'
 import {HomeAllPostQuery} from './Home.query'
-import enviroment from '../../enviroment/graphRelay'
+import enviroment from '../../../enviroment/graphRelay'
 
 class Home extends React.Component {
   render() {
